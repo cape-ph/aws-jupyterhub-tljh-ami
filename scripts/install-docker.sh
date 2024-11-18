@@ -18,5 +18,5 @@ echo \
 sudo apt-get update
 
 # install latest docker
-# TODO: pin version...
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# TODO: ISSUE #2
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
