@@ -43,6 +43,15 @@ build {
   ]
     
   # TODO: install tljh, docker, ecs agent
+  
+  # get os and pre-installs up to date
+  provisioner "shell" {
+    inline_shebang = "/bin/sh -ex"
+    inline = [
+      "sudo apt-get -y update",
+      "sudo apt-get -y upgrade",
+    ]
+  }
 
   provisioner "shell" {
     script = "scripts/install-docker.sh"
