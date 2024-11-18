@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -ex
 
+# NOTE: This is here as a convenience for extension down the road. As of the
+#       first release of the AMI we have no additional scripts.
+
 AMI_SCRIPTS=/tmp/additional-scripts/"${AMI_PREFIX}"
 
 if [ -d "${AMI_SCRIPTS}" ]; then
